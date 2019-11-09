@@ -90,11 +90,11 @@ class i18n {
  * @access public
  * @return object Returns an instance of the class.
  */
-function ubp_i18n() {
+function abp_i18n() {
 
 	return i18n::instance();
 
 }
 
 // Run an instance of the class.
-ubp_i18n();
+abp_i18n();

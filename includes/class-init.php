@@ -96,8 +96,8 @@ final class Init {
 	public function plugin_support() {
 
 		// Add Advanced Custom Fields Support.
-		if ( ubp_acf() ) {
 			include_once UBP_PATH . 'includes/acf/class-extend-acf.php';
+		if ( abp_acf() ) {
 		}
 
 		// Add Beaver Builder support.
@@ -121,11 +121,11 @@ final class Init {
  * @access public
  * @return object Returns an instance of the class.
  */
-function ubp_init() {
+function abp_init() {
 
 	return Init::instance();
 
 }
 
 // Run an instance of the class.
-ubp_init();
+abp_init();

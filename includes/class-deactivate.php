@@ -79,7 +79,7 @@ class Controlled_Chaos_Deactivate {
  * @access public
  * @return object Returns an instance of the class.
  */
-function ubp_deactivate() {
+function abp_deactivate() {
 
 	return Controlled_Chaos_Deactivate::instance();
 

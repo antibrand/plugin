@@ -43,7 +43,7 @@
  *    only uppercase letters.
  *
  * 4. General prefix
- *    Find `ubp` and replace with something unique to your plugin name. Use
+ *    Find `abp` and replace with something unique to your plugin name. Use
  *    only lowercase letters. This will change the prefix of all filters and
  *    settings, and the prefix of functions outside of a class.
  *
@@ -245,20 +245,20 @@ if ( ! class_exists( 'Plugin' ) ) :
 	 * @access public
 	 * @return object Returns the instance of the `Plugin` class.
 	 */
-	function ubp_plugin() {
+	function abp_plugin() {
 
 		return Plugin::instance();
 
 	}
 
 	// Begin plugin functionality.
-	ubp_plugin();
+	abp_plugin();
 
 // End the check for the plugin class.
 endif;
 
 // Bail out now if the core class was not run.
-if ( ! function_exists( 'ubp_plugin' ) ) {
+if ( ! function_exists( 'abp_plugin' ) ) {
 	return;
 }
 
@@ -269,8 +269,8 @@ if ( ! function_exists( 'ubp_plugin' ) ) {
  * @access public
  * @return void
  */
-register_activation_hook( __FILE__, '\ubp_activate_plugin' );
-register_deactivation_hook( __FILE__, '\ubp_deactivate_plugin' );
+register_activation_hook( __FILE__, '\abp_activate_plugin' );
+register_deactivation_hook( __FILE__, '\abp_deactivate_plugin' );
 
 /**
  * The code that runs during plugin activation.
@@ -279,10 +279,10 @@ register_deactivation_hook( __FILE__, '\ubp_deactivate_plugin' );
  * @access public
  * @return void
  */
-function ubp_activate_plugin() {
+function abp_activate_plugin() {
 
 	// Run the activation class.
-	ubp_activate();
+	abp_activate();
 
 }
 
@@ -293,10 +293,10 @@ function ubp_activate_plugin() {
  * @access public
  * @return void
  */
-function ubp_deactivate_plugin() {
+function abp_deactivate_plugin() {
 
 	// Run the deactivation class.
-	ubp_deactivate();
+	abp_deactivate();
 
 }
 
@@ -307,7 +307,7 @@ function ubp_deactivate_plugin() {
  * @access public
  * @return bool Returns true if the ACF free or Pro plugin is active.
  */
-function ubp_acf() {
+function abp_acf() {
 
 	if ( class_exists( 'acf' ) ) {
 		return true;
@@ -324,7 +324,7 @@ function ubp_acf() {
  * @access public
  * @return bool Returns true if the ACF Pro plugin is active.
  */
-function ubp_acf_pro() {
+function abp_acf_pro() {
 
 	if ( class_exists( 'acf_pro' ) ) {
 		return true;

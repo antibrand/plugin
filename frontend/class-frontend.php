@@ -78,11 +78,11 @@ class Frontend {
  * @access public
  * @return object Returns an instance of the class.
  */
-function ubp_frontend() {
+function abp_frontend() {
 
 	return Frontend::instance();
 
 }
 
 // Run an instance of the class.
-ubp_frontend();
+abp_frontend();
