@@ -5,7 +5,6 @@
  * @package    Plugin
  *
  * @since      1.0.0
- * @author     Greg Sweet <greg@ccdzine.com>
  */
 
 // If uninstall is not called then exit.

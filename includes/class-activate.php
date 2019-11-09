@@ -8,7 +8,6 @@
  * @subpackage Includes
  *
  * @since      1.0.0
- * @author     Greg Sweet <greg@ccdzine.com>
  */
 
 // If this file is called directly, abort.

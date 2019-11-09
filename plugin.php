@@ -4,19 +4,17 @@
  *
  * @package     Plugin
  * @version     1.0.0
- * @author      Greg Sweet <greg@ccdzine.com>
- * @copyright   Copyright © 2019, Greg Sweet
  * @link        https://github.com/antibrand/plugin
  *
  * Plugin Name:  plugin
  * Plugin URI:   https://github.com/antibrand/plugin
  * Description:  A basic starter plugin for your website management system.
  * Version:      1.0.0
- * Author:       Controlled Chaos Design
- * Author URI:   http://ccdzine.com/
+ * Author:
+ * Author URI:
  * Text Domain:  antibrand
  * Domain Path:  /languages
- * Tested up to: 5.2.3
+ * Tested up to:
  */
 
 /**
@@ -46,10 +44,6 @@
  *    Find `abp` and replace with something unique to your plugin name. Use
  *    only lowercase letters. This will change the prefix of all filters and
  *    settings, and the prefix of functions outside of a class.
- *
- * 5. Author
- *    Find `Greg Sweet <greg@ccdzine.com>` and replace with your name and
- *    email address or those of your organization.
  */
 
 // If this file is called directly, abort.

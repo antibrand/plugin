@@ -5,7 +5,6 @@
  * @subpackage Admin
  *
  * @since      1.0.0
- * @author     Greg Sweet <greg@ccdzine.com>
  */
 
 namespace Plugin\Admin;
