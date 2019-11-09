@@ -6,7 +6,7 @@ A basic starter plugin for your website management system. This included as a de
 ![PHP tested on version 7.3](https://img.shields.io/badge/PHP-tested%207.3-8892bf.svg?style=flat-square)
 ![ACF Pro Ready](https://img.shields.io/badge/ACF%20Pro-ready-00d3ae.svg?style=flat-square)
 
-![plugin image](https://raw.githubusercontent.com/antibrand/plugin/master/plugin.jpg)
+![plugin image](https://raw.githubusercontent.com/antibrand/plugin/master/cover.jpg)
 
 ## Nothing Fancy
 
