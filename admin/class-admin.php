@@ -77,11 +77,11 @@ class Admin {
  * @access public
  * @return object Returns an instance of the class.
  */
-function ubp_admin() {
+function abp_admin() {
 
 	return Admin::instance();
 
 }
 
 // Run an instance of the class.
-ubp_admin();
+abp_admin();

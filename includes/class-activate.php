@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
  * @since  1.0.0
  * @access public
  */
-class Controlled_Chaos_Activate {
+class Antibrand_Activate {
 
 	/**
 	 * Instance of the class
@@ -79,8 +79,8 @@ class Controlled_Chaos_Activate {
  * @access public
  * @return object Returns an instance of the class.
  */
-function ubp_activate() {
+function abp_activate() {
 
-	return Controlled_Chaos_Activate::instance();
+	return Antibrand_Activate::instance();
 
 }

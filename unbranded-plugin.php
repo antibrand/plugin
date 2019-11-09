@@ -6,15 +6,15 @@
  * @version     1.0.0
  * @author      Greg Sweet <greg@ccdzine.com>
  * @copyright   Copyright © 2019, Greg Sweet
- * @link        https://github.com/ControlledChaos/unbranded-plugin
+ * @link        https://github.com/antibrand/plugin
  *
  * Plugin Name:  plugin
- * Plugin URI:   https://github.com/ControlledChaos/unbranded-plugin
+ * Plugin URI:   https://github.com/antibrand/plugin
  * Description:  A basic starter plugin for your website management system.
  * Version:      1.0.0
  * Author:       Controlled Chaos Design
  * Author URI:   http://ccdzine.com/
- * Text Domain:  unbranded
+ * Text Domain:  antibrand
  * Domain Path:  /languages
  * Tested up to: 5.2.3
  */
@@ -35,15 +35,15 @@
  *    and the package name in file headers.
  *
  * 2. Text domain
- *    Find unbranded and replace with the new name of your
+ *    Find antibrand and replace with the new name of your
  *    primary plugin file (this file).
  *
  * 3. Constants prefix
- *    Find `UBP` and replace with something unique to your plugin name. Use
+ *    Find `ABP` and replace with something unique to your plugin name. Use
  *    only uppercase letters.
  *
  * 4. General prefix
- *    Find `ubp` and replace with something unique to your plugin name. Use
+ *    Find `abp` and replace with something unique to your plugin name. Use
  *    only lowercase letters. This will change the prefix of all filters and
  *    settings, and the prefix of functions outside of a class.
  *
@@ -133,8 +133,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @since  1.0.0
 			 * @return string Returns the latest plugin version.
 			 */
-			if ( ! defined( 'UBP_VERSION' ) ) {
-				define( 'UBP_VERSION', '1.0.0' );
+			if ( ! defined( 'ABP_VERSION' ) ) {
+				define( 'ABP_VERSION', '1.0.0' );
 			}
 
 			/**
@@ -143,8 +143,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @since  1.0.0
 			 * @return string Returns the text domain of the plugin.
 			 */
-			if ( ! defined( 'UBP_DOMAIN' ) ) {
-				define( 'UBP_DOMAIN', 'unbranded' );
+			if ( ! defined( 'ABP_DOMAIN' ) ) {
+				define( 'ABP_DOMAIN', 'antibrand' );
 			}
 
 			/**
@@ -154,8 +154,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @return string Returns the filesystem directory path (with trailing slash)
 			 *                for the plugin __FILE__ passed in.
 			 */
-			if ( ! defined( 'UBP_PATH' ) ) {
-				define( 'UBP_PATH', plugin_dir_path( __FILE__ ) );
+			if ( ! defined( 'ABP_PATH' ) ) {
+				define( 'ABP_PATH', plugin_dir_path( __FILE__ ) );
 			}
 
 			/**
@@ -165,8 +165,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @return string Returns the URL directory path (with trailing slash)
 			 *                for the plugin __FILE__ passed in.
 			 */
-			if ( ! defined( 'UBP_URL' ) ) {
-				define( 'UBP_URL', plugin_dir_url( __FILE__ ) );
+			if ( ! defined( 'ABP_URL' ) ) {
+				define( 'ABP_URL', plugin_dir_url( __FILE__ ) );
 			}
 
 			/**
@@ -175,14 +175,14 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * This URL slug is used for various plugin admin & settings pages.
 			 *
 			 * The prefix will change in your search & replace in renaming the plugin.
-			 * Change the second part of the define(), here as 'unbranded',
+			 * Change the second part of the define(), here as 'antibrand',
 			 * to your preferred page slug.
 			 *
 			 * @since  1.0.0
 			 * @return string Returns the URL slug of the admin pages.
 			 */
-			if ( ! defined( 'UBP_ADMIN_SLUG' ) ) {
-				define( 'UBP_ADMIN_SLUG', 'unbranded' );
+			if ( ! defined( 'ABP_ADMIN_SLUG' ) ) {
+				define( 'ABP_ADMIN_SLUG', 'antibrand' );
 			}
 
 		}
@@ -197,7 +197,7 @@ if ( ! class_exists( 'Plugin' ) ) :
 		public function __clone() {
 
 			// Cloning instances of the class is forbidden.
-			_doing_it_wrong( __FUNCTION__, __( 'This is not allowed.', 'unbranded' ), '1.0.0' );
+			_doing_it_wrong( __FUNCTION__, __( 'This is not allowed.', 'antibrand' ), '1.0.0' );
 
 		}
 
@@ -211,7 +211,7 @@ if ( ! class_exists( 'Plugin' ) ) :
 		public function __wakeup() {
 
 			// Unserializing instances of the class is forbidden.
-			_doing_it_wrong( __FUNCTION__, __( 'This is not allowed.', 'unbranded' ), '1.0.0' );
+			_doing_it_wrong( __FUNCTION__, __( 'This is not allowed.', 'antibrand' ), '1.0.0' );
 
 		}
 
@@ -225,13 +225,13 @@ if ( ! class_exists( 'Plugin' ) ) :
 		private function dependencies() {
 
 			// The hub of all other dependency files.
-			require_once UBP_PATH . 'includes/class-init.php';
+			require_once ABP_PATH . 'includes/class-init.php';
 
 			// Include the activation class.
-			require_once UBP_PATH . 'includes/class-activate.php';
+			require_once ABP_PATH . 'includes/class-activate.php';
 
 			// Include the deactivation class.
-			require_once UBP_PATH . 'includes/class-deactivate.php';
+			require_once ABP_PATH . 'includes/class-deactivate.php';
 
 		}
 
@@ -245,20 +245,20 @@ if ( ! class_exists( 'Plugin' ) ) :
 	 * @access public
 	 * @return object Returns the instance of the `Plugin` class.
 	 */
-	function ubp_plugin() {
+	function abp_plugin() {
 
 		return Plugin::instance();
 
 	}
 
 	// Begin plugin functionality.
-	ubp_plugin();
+	abp_plugin();
 
 // End the check for the plugin class.
 endif;
 
 // Bail out now if the core class was not run.
-if ( ! function_exists( 'ubp_plugin' ) ) {
+if ( ! function_exists( 'abp_plugin' ) ) {
 	return;
 }
 
@@ -269,8 +269,8 @@ if ( ! function_exists( 'ubp_plugin' ) ) {
  * @access public
  * @return void
  */
-register_activation_hook( __FILE__, '\ubp_activate_plugin' );
-register_deactivation_hook( __FILE__, '\ubp_deactivate_plugin' );
+register_activation_hook( __FILE__, '\abp_activate_plugin' );
+register_deactivation_hook( __FILE__, '\abp_deactivate_plugin' );
 
 /**
  * The code that runs during plugin activation.
@@ -279,10 +279,10 @@ register_deactivation_hook( __FILE__, '\ubp_deactivate_plugin' );
  * @access public
  * @return void
  */
-function ubp_activate_plugin() {
+function abp_activate_plugin() {
 
 	// Run the activation class.
-	ubp_activate();
+	abp_activate();
 
 }
 
@@ -293,10 +293,10 @@ function ubp_activate_plugin() {
  * @access public
  * @return void
  */
-function ubp_deactivate_plugin() {
+function abp_deactivate_plugin() {
 
 	// Run the deactivation class.
-	ubp_deactivate();
+	abp_deactivate();
 
 }
 
@@ -307,7 +307,7 @@ function ubp_deactivate_plugin() {
  * @access public
  * @return bool Returns true if the ACF free or Pro plugin is active.
  */
-function ubp_acf() {
+function abp_acf() {
 
 	if ( class_exists( 'acf' ) ) {
 		return true;
@@ -324,7 +324,7 @@ function ubp_acf() {
  * @access public
  * @return bool Returns true if the ACF Pro plugin is active.
  */
-function ubp_acf_pro() {
+function abp_acf_pro() {
 
 	if ( class_exists( 'acf_pro' ) ) {
 		return true;

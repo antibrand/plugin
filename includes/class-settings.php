@@ -78,11 +78,11 @@ class Settings {
  * @access public
  * @return object Returns an instance of the class.
  */
-function ubp_settings() {
+function abp_settings() {
 
 	return Settings::instance();
 
 }
 
 // Run an instance of the class.
-ubp_settings();
+abp_settings();
