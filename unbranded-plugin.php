@@ -39,7 +39,7 @@
  *    primary plugin file (this file).
  *
  * 3. Constants prefix
- *    Find `UBP` and replace with something unique to your plugin name. Use
+ *    Find `ABP` and replace with something unique to your plugin name. Use
  *    only uppercase letters.
  *
  * 4. General prefix
@@ -133,8 +133,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @since  1.0.0
 			 * @return string Returns the latest plugin version.
 			 */
-			if ( ! defined( 'UBP_VERSION' ) ) {
-				define( 'UBP_VERSION', '1.0.0' );
+			if ( ! defined( 'ABP_VERSION' ) ) {
+				define( 'ABP_VERSION', '1.0.0' );
 			}
 
 			/**
@@ -143,8 +143,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @since  1.0.0
 			 * @return string Returns the text domain of the plugin.
 			 */
-			if ( ! defined( 'UBP_DOMAIN' ) ) {
-				define( 'UBP_DOMAIN', 'unbranded' );
+			if ( ! defined( 'ABP_DOMAIN' ) ) {
+				define( 'ABP_DOMAIN', 'antibrand' );
 			}
 
 			/**
@@ -154,8 +154,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @return string Returns the filesystem directory path (with trailing slash)
 			 *                for the plugin __FILE__ passed in.
 			 */
-			if ( ! defined( 'UBP_PATH' ) ) {
-				define( 'UBP_PATH', plugin_dir_path( __FILE__ ) );
+			if ( ! defined( 'ABP_PATH' ) ) {
+				define( 'ABP_PATH', plugin_dir_path( __FILE__ ) );
 			}
 
 			/**
@@ -165,8 +165,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @return string Returns the URL directory path (with trailing slash)
 			 *                for the plugin __FILE__ passed in.
 			 */
-			if ( ! defined( 'UBP_URL' ) ) {
-				define( 'UBP_URL', plugin_dir_url( __FILE__ ) );
+			if ( ! defined( 'ABP_URL' ) ) {
+				define( 'ABP_URL', plugin_dir_url( __FILE__ ) );
 			}
 
 			/**
@@ -181,8 +181,8 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * @since  1.0.0
 			 * @return string Returns the URL slug of the admin pages.
 			 */
-			if ( ! defined( 'UBP_ADMIN_SLUG' ) ) {
-				define( 'UBP_ADMIN_SLUG', 'unbranded' );
+			if ( ! defined( 'ABP_ADMIN_SLUG' ) ) {
+				define( 'ABP_ADMIN_SLUG', 'antibrand' );
 			}
 
 		}
@@ -225,13 +225,13 @@ if ( ! class_exists( 'Plugin' ) ) :
 		private function dependencies() {
 
 			// The hub of all other dependency files.
-			require_once UBP_PATH . 'includes/class-init.php';
+			require_once ABP_PATH . 'includes/class-init.php';
 
 			// Include the activation class.
-			require_once UBP_PATH . 'includes/class-activate.php';
+			require_once ABP_PATH . 'includes/class-activate.php';
 
 			// Include the deactivation class.
-			require_once UBP_PATH . 'includes/class-deactivate.php';
+			require_once ABP_PATH . 'includes/class-deactivate.php';
 
 		}
 

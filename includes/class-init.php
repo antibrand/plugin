@@ -73,16 +73,16 @@ final class Init {
 	private function dependencies() {
 
 		// Plugin settings class.
-		require_once UBP_PATH . 'includes/class-settings.php';
+		require_once ABP_PATH . 'includes/class-settings.php';
 
 		// Admin/backend functionality, scripts and styles.
-		require_once UBP_PATH . 'admin/class-admin.php';
+		require_once ABP_PATH . 'admin/class-admin.php';
 
 		// Frontend functionality, scripts and styles.
-		require_once UBP_PATH . 'frontend/class-frontend.php';
+		require_once ABP_PATH . 'frontend/class-frontend.php';
 
 		// Translation functionality.
-		require_once UBP_PATH . 'includes/class-i18n.php';
+		require_once ABP_PATH . 'includes/class-i18n.php';
 
 	}
 
@@ -96,18 +96,18 @@ final class Init {
 	public function plugin_support() {
 
 		// Add Advanced Custom Fields Support.
-			include_once UBP_PATH . 'includes/acf/class-extend-acf.php';
 		if ( abp_acf() ) {
+			include_once ABP_PATH . 'includes/acf/class-extend-acf.php';
 		}
 
 		// Add Beaver Builder support.
 		if ( class_exists( 'FLBuilder' ) ) {
-			include_once UBP_PATH . 'includes/beaver/class-beaver-builder.php';
+			include_once ABP_PATH . 'includes/beaver/class-beaver-builder.php';
 		}
 
 		// Add Elementor support.
 		if ( class_exists( '\Elementor\Plugin' ) ) {
-			include_once UBP_PATH . 'includes/elementor/class-elementor.php';
+			include_once ABP_PATH . 'includes/elementor/class-elementor.php';
 		}
 
 	}
