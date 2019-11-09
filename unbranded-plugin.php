@@ -14,7 +14,7 @@
  * Version:      1.0.0
  * Author:       Controlled Chaos Design
  * Author URI:   http://ccdzine.com/
- * Text Domain:  unbranded
+ * Text Domain:  antibrand
  * Domain Path:  /languages
  * Tested up to: 5.2.3
  */
@@ -35,7 +35,7 @@
  *    and the package name in file headers.
  *
  * 2. Text domain
- *    Find unbranded and replace with the new name of your
+ *    Find antibrand and replace with the new name of your
  *    primary plugin file (this file).
  *
  * 3. Constants prefix
@@ -175,7 +175,7 @@ if ( ! class_exists( 'Plugin' ) ) :
 			 * This URL slug is used for various plugin admin & settings pages.
 			 *
 			 * The prefix will change in your search & replace in renaming the plugin.
-			 * Change the second part of the define(), here as 'unbranded',
+			 * Change the second part of the define(), here as 'antibrand',
 			 * to your preferred page slug.
 			 *
 			 * @since  1.0.0
@@ -197,7 +197,7 @@ if ( ! class_exists( 'Plugin' ) ) :
 		public function __clone() {
 
 			// Cloning instances of the class is forbidden.
-			_doing_it_wrong( __FUNCTION__, __( 'This is not allowed.', 'unbranded' ), '1.0.0' );
+			_doing_it_wrong( __FUNCTION__, __( 'This is not allowed.', 'antibrand' ), '1.0.0' );
 
 		}
 
@@ -211,7 +211,7 @@ if ( ! class_exists( 'Plugin' ) ) :
 		public function __wakeup() {
 
 			// Unserializing instances of the class is forbidden.
-			_doing_it_wrong( __FUNCTION__, __( 'This is not allowed.', 'unbranded' ), '1.0.0' );
+			_doing_it_wrong( __FUNCTION__, __( 'This is not allowed.', 'antibrand' ), '1.0.0' );
 
 		}
 
