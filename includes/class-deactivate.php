@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
  * @since  1.0.0
  * @access public
  */
-class Controlled_Chaos_Deactivate {
+class Antibrand_Deactivate {
 
 	/**
 	 * Instance of the class
@@ -81,6 +81,6 @@ class Controlled_Chaos_Deactivate {
  */
 function abp_deactivate() {
 
-	return Controlled_Chaos_Deactivate::instance();
+	return Antibrand_Deactivate::instance();
 
 }

@@ -6,10 +6,10 @@
  * @version     1.0.0
  * @author      Greg Sweet <greg@ccdzine.com>
  * @copyright   Copyright © 2019, Greg Sweet
- * @link        https://github.com/ControlledChaos/unbranded-plugin
+ * @link        https://github.com/antibrand/plugin
  *
  * Plugin Name:  plugin
- * Plugin URI:   https://github.com/ControlledChaos/unbranded-plugin
+ * Plugin URI:   https://github.com/antibrand/plugin
  * Description:  A basic starter plugin for your website management system.
  * Version:      1.0.0
  * Author:       Controlled Chaos Design
