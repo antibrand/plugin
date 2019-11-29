@@ -60,7 +60,12 @@ final class Init {
 	 * @access private
 	 * @return self
 	 */
-	private function __construct() {}
+	private function __construct() {
+
+		// Load classes for plugin support.
+		add_action( 'init', [ $this, 'plugin_support' ] );
+
+	}
 
 	/**
 	 * Load the required dependencies for this plugin.
@@ -86,7 +91,7 @@ final class Init {
 	}
 
 	/**
-	 * Load classes to extend plugins.
+	 * Load classes for plugin support
 	 *
 	 * @since  1.0.0
 	 * @access public
@@ -94,20 +99,7 @@ final class Init {
 	 */
 	public function plugin_support() {
 
-		// Add Advanced Custom Fields Support.
-		if ( abp_acf() ) {
-			include_once ABP_PATH . 'includes/acf/class-extend-acf.php';
-		}
-
-		// Add Beaver Builder support.
-		if ( class_exists( 'FLBuilder' ) ) {
-			include_once ABP_PATH . 'includes/beaver/class-beaver-builder.php';
-		}
-
-		// Add Elementor support.
-		if ( class_exists( '\Elementor\Plugin' ) ) {
-			include_once ABP_PATH . 'includes/elementor/class-elementor.php';
-		}
+		// Get plugin support files.
 
 	}
 

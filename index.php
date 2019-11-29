@@ -293,37 +293,3 @@ function abp_deactivate_plugin() {
 	abp_deactivate();
 
 }
-
-/**
- * Check for Advanced Custom Fields.
- *
- * @since  1.0.0
- * @access public
- * @return bool Returns true if the ACF free or Pro plugin is active.
- */
-function abp_acf() {
-
-	if ( class_exists( 'acf' ) ) {
-		return true;
-	} else {
-		return false;
-	}
-
-}
-
-/**
- * Check for Advanced Custom Fields Pro.
- *
- * @since  1.0.0
- * @access public
- * @return bool Returns true if the ACF Pro plugin is active.
- */
-function abp_acf_pro() {
-
-	if ( class_exists( 'acf_pro' ) ) {
-		return true;
-	} else {
-		return false;
-	}
-
-}
