@@ -2,9 +2,9 @@
 /**
  * Plugin
  *
- * @package     Plugin
- * @version     1.0.0
- * @link        https://github.com/antibrand/plugin
+ * @package Plugin
+ * @version 1.0.0
+ * @link    https://github.com/antibrand/plugin
  *
  * Plugin Name:  plugin
  * Plugin URI:   https://github.com/antibrand/plugin
@@ -46,11 +46,6 @@
  *    settings, and the prefix of functions outside of a class.
  */
 
-// If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-	die;
-}
-
 /**
  * The core plugin class
  *
@@ -63,6 +58,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 // First check for other classes with the same name.
 if ( ! class_exists( 'Plugin' ) ) :
+
 	final class Plugin {
 
 		/**
@@ -142,7 +138,7 @@ if ( ! class_exists( 'Plugin' ) ) :
 			}
 
 			/**
-			 * Plugin folder path
+			 * Plugin directory path
 			 *
 			 * @since  1.0.0
 			 * @return string Returns the filesystem directory path (with trailing slash)
@@ -153,7 +149,7 @@ if ( ! class_exists( 'Plugin' ) ) :
 			}
 
 			/**
-			 * Plugin folder URL
+			 * Plugin directory URL
 			 *
 			 * @since  1.0.0
 			 * @return string Returns the URL directory path (with trailing slash)
