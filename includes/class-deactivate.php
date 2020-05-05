@@ -4,11 +4,10 @@
  *
  * This file must not be namespaced.
  *
- * @link       http://ccdzine.com
- * @since      1.0.0
- *
  * @package    Plugin
  * @subpackage Includes
+ *
+ * @since      1.0.0
  */
 
 // If this file is called directly, abort.
