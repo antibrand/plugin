@@ -13,7 +13,7 @@ namespace Plugin\Admin;
 use \AppNamespace\Backend as Backend;
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
+if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
 
